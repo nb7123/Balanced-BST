@@ -20,12 +20,12 @@ Node::Node(int value, int type):
         factor(0) {
     left = nullptr;
     right = nullptr;
+    parent = nullptr;
 }
 
 Node::~Node() {
     delete(left);
     delete(right);
-//    std::cout << "Delete node: " << value << std::endl;
 }
 
 bool Node::isLeaf() {
